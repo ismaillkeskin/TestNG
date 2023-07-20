@@ -36,15 +36,25 @@
 
         </dependency>
         <!-- Webdrivermanager; sürücüleri yönetir ve proje için gereken sürücüyü otomatik olarak yükler -->
-        <!--
-https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+        <!--https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
  -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.3.2</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.2.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.3</version>
+        </dependency>
 
 
 
