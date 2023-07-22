@@ -9,25 +9,34 @@ import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
 
 public class C01_NegatifTest {
-    //Description:
-    //Kullanimda olmayan kullanıcı adi ve şifre ile giriş yapilamamali
-   //Acceptance Criteria
-   //Customer email: fake@bluerentalcars.com
-  //Customer password: fakepass
-  //Error:
-  //User with email fake@bluerentalcars.com not found
-
-
-    @Test
+    @Test(groups = "smoke")
     public void test01() {
-        //https://www.bluerentalcars.com/ adresine gidelim negatif senaryo ile login olamadığımızı test edelim
+        //Description:
+        //Kullanimda olmayan kullanıcı adi ve şifre ile giriş yapilamamali
+        //Acceptance Criteria
+        //Customer email: fake@bluerentalcars.com
+        //Customer password: fakepass
+        //Error:
+        //User with email fake@bluerentalcars.com not found
+        //---------------------------------------------//
+
+        //BlueRental sayfasına gidelim
         Driver.getDriver().get(ConfigReader.getProperty("blueRentalUrl"));
-        BlueRentalPage blueRentalPage = new BlueRentalPage();
-        blueRentalPage.login.click();
-        blueRentalPage.email.sendKeys(ConfigReader.getProperty("fakeEmail"), Keys.TAB,
-                ConfigReader.getProperty("fakePassword"),Keys.ENTER);
-        ReusableMethods.visibleWait(blueRentalPage.mesajVerify,5);
-        Assert.assertTrue(blueRentalPage.mesajVerify.isDisplayed());
+
+        //Login butonuna tıklayınız
+        BlueRentalPage rentalPage = new BlueRentalPage();
+        rentalPage.login.click();
+        ReusableMethods.bekle(2);
+        rentalPage.email.sendKeys(ConfigReader.getProperty("fakeEmail"),Keys.TAB,
+                ConfigReader.getProperty("fakePassword"), Keys.ENTER);
+
+        //Hata mesajının görünür olduğunu doğrula
+        ReusableMethods.visibleWait(rentalPage.mesajVerify,5);
+        Assert.assertTrue(rentalPage.mesajVerify.isDisplayed());
+
+        //Sayfayı kapatınız
+        Driver.closeDriver();
+
 
     }
 }

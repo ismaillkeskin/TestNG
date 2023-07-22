@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/keski/Desktop/Selenium/B151TestNGProject/src/test/java/techproed/tests/day25_POM">
+        <classes>
+            <class name="techproed.tests.day25_POM.C01_DriverTest"/>
+            <class name="techproed.tests.day26_PagesKullanimi.C04_PositiveTest"/>
+            <class name="techproed.tests.day27_SmokeTest_Excel.C01_NegatifTest"/>
+
+        </classes>
+    </test>
+</suite>

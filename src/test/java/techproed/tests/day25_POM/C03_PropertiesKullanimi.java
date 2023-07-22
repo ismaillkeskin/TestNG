@@ -20,7 +20,7 @@ public class C03_PropertiesKullanimi {
         Assert.assertTrue(actualTitle.contains(expectedTitle));
 
          //arama kutusunda iphone aratalım
-        Driver.getDriver().findElement(By.id("twotabsearchtextbox")).sendKeys(ConfigReader.getProperty("searchBox"), Keys.ENTER);
+        Driver.getDriver().findElement(By.id("twotabsearchtextbox")).sendKeys(ConfigReader.getProperty("searchText"), Keys.ENTER);
 
         //sayfayı kapatın
         Driver.closeDriver();
