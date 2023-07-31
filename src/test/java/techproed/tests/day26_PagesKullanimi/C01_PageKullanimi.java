@@ -33,5 +33,6 @@ public class C01_PageKullanimi {
         //Login Testinin basarili oldugunu test et
         Assert.assertTrue(sourcePage.verify.isDisplayed());
 
+
     }
 }
