@@ -13,9 +13,10 @@
         </classes>
     </test>
 </suite>
+
         <!-- XML file ile testlerimizi eszamanli test sayisi kadar calistirmak istersek,
         oncelikle testlerimizi buna gore organize etmeliyiz her method icin sorunsuz calisabilmesi icin
         methodlara driver ayarlarini ayri ayri yapmamizda fayda var.
         XML file da <test> tagi icine parametre olarak parallel="methods"ve kac browserda calistirmak istersek
-         thread-count="3" ayarlamasini yaparak testleri paralel calistirmis oluruz. Class sevisyesinde paralel
-         calistirmak istersek <suite> tagi icine parallel="class" olarak belirtiriz -->
+        thread-count="3" ayarlamasini yaparak testleri paralel calistirmis oluruz. Class sevisyesinde paralel
+        calistirmak istersek <suite> tagi icine parallel="class" olarak belirtiriz  -->

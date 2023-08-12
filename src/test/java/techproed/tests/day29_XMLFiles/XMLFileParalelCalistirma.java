@@ -16,6 +16,7 @@ public class XMLFileParalelCalistirma {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.get("https://amazon.com");
         driver.close();
+
     }
 
     @Test
@@ -26,6 +27,7 @@ public class XMLFileParalelCalistirma {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.get("https://facebook.com");
         driver.close();
+
     }
 
     @Test
@@ -36,5 +38,6 @@ public class XMLFileParalelCalistirma {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.get("https://youtube.com");
         driver.close();
+
     }
 }

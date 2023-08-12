@@ -7,7 +7,6 @@
             <class name="techproed.tests.day25_POM.C01_DriverTest"/>
             <class name="techproed.tests.day26_PagesKullanimi.C04_PositiveTest"/>
             <class name="techproed.tests.day27_SmokeTest_Excel.C01_NegatifTest"/>
-
         </classes>
     </test>
 </suite>

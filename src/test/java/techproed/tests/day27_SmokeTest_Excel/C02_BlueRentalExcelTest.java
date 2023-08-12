@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import techproed.utilities.ExcelReader;
 
 public class C02_BlueRentalExcelTest {
+
     @Test
     public void test01() {
      //mysmokedata excel dosyasındaki 1. satır bilgilerini konsola yazdıralım

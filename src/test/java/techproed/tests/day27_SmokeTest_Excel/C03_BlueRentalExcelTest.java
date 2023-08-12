@@ -40,7 +40,7 @@ public class C03_BlueRentalExcelTest {
      Login webelementi login olduktan sonrada ayni locate sahip olabilme ihtimaline karsi daha garantili bir
      dogrulama yapmak icin login olduktan sonra login webelementinin oldugu yerde login oldugumuz yerde kullanici
      ismi cikacaktir. Bu webelementin getText() methodu ile alip kullanici ismini iceriyor mu ? icermiyor mu olarak
-     test ederiz
+     test ederiz.
       */
 
        //Sayfayi kapatalim
