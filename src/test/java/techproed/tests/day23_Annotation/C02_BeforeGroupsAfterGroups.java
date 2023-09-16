@@ -21,18 +21,21 @@ public class C02_BeforeGroupsAfterGroups {
 
     @Test(groups = "gp1")
     public void test01() {
+
         String amazonUrl = "https://amazon.com";
         driver.get(amazonUrl);
     }
 
     @Test(groups = "gp1")
     public void test02() {
+
         String youtubeUrl = "https://youtube.com";
         driver.get(youtubeUrl);
     }
 
     @Test
     public void test03() {
+
         String facebookUrl ="https://facebook.com";
        driver.get(facebookUrl);
 

@@ -23,6 +23,7 @@ public class C03_BlueRentalExcelTest {
 
         String email = reader.getCellData(1,0);
         String password = reader.getCellData(1,1);
+        System.out.println();
 
         //BlueRentalCar sayfasına gidelim
         Driver.getDriver().get(ConfigReader.getProperty("blueRentalUrl"));

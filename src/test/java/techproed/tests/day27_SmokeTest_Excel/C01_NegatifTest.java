@@ -29,6 +29,7 @@ public class C01_NegatifTest {
         ReusableMethods.bekle(2);
         rentalPage.email.sendKeys(ConfigReader.getProperty("fakeEmail"),Keys.TAB,
                 ConfigReader.getProperty("fakePassword"), Keys.ENTER);
+        System.out.println();
 
         //Hata mesajının görünür olduğunu doğrula
         ReusableMethods.visibleWait(rentalPage.mesajVerify,5);
